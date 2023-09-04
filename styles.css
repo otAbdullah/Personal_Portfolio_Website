@@ -11,6 +11,11 @@
     --green: #00ff11;
 }
 
+html{
+    scroll-snap-type: y mandatory;
+    scroll-padding-top: 50px;
+}
+
 @font-face{
     font-family: "berkley";
     src: url(fonts/BerkeleyMonoTrial-Regular.otf);
@@ -27,21 +32,18 @@ body{
     margin: 0;
 }
 
-.container{
-    scroll-snap-type: y mandatory;
-    overflow-y: scroll;
-    height: 100vh;
-}
-
 .miniContainer{
     display: flex;
     padding-top: 2%;
     height: 90%;
+    margin-left: 2%;
+    margin-right: 2%;
 }
 
 section{
     height: 100vh;
     scroll-snap-align: start;
+    scroll-snap-stop: always;
 }
 
 .navBar{
@@ -121,14 +123,15 @@ section{
 }
 
 .introContent h2{
-    padding-left: 50px;
     margin-top: 0px;
+    padding-top: 20px;
     font-size: 40px;
     font-family: Quicksand;
-    text-align: center;
+    text-align: start;
 }
 
 .introContent h2 span{
+    color: var(--Paragraph);
     font-family: Cookie;
     font-weight: 200;
     font-size: 120px;
@@ -141,22 +144,39 @@ section{
     text-align: center;
     padding-bottom: 40px;
     line-height: 300px;
-    
-
-    font-size: 180px;
-    font-family: Monsterrat;
     height: 200px;
     max-height: 200px;
     overflow: hidden;
-    text-decoration: solid;
-    text-decoration: underline;
-
 }
 
-.greeting span{
-    position: relative;
-    top: -40px;
-    animation: spin_words 12s ease-in-out infinite; 
+.greeting-1 span{
+    text-decoration: underline;
+    position: absolute;
+    font-size: 180px;
+    font-family: Monsterrat;
+    opacity: 0;
+    animation: spinWords 21s linear infinite 0s;
+}
+.greeting span:nth-child(2) {  
+    animation-delay: 3s; 
+}
+.greeting span:nth-child(3) { 
+    animation-delay: 6s; 	
+}
+.greeting span:nth-child(4) { 
+    animation-delay: 9s; 
+}
+.greeting span:nth-child(5) { 
+    animation-delay: 12s; 
+}
+.greeting span:nth-child(6) { 
+    animation-delay: 15s; 
+}
+.greeting span:nth-child(7) { 
+    animation-delay: 18s; 
+}
+.greeting span:nth-child(8) { 
+    animation-delay: 21s; 
 }
 
 .scrollNotif{
@@ -182,7 +202,6 @@ section{
     background-color: var(--Box);
     width: 45%;
     height: 98%;
-    margin-left: 2%;
     padding-left: 1%;
     padding-right: 1%;
 
@@ -263,6 +282,165 @@ section{
     border-radius: 5px;
     font-family: berkley;
     font-size: 35px;
+    text-decoration: none;
+    color: var(--ButtonText);
+}
+
+.goalsContentbox{
+    display: flex;
+    flex-direction: column;
+    z-index: 10;
+    background-color: var(--Box);
+    padding-left: 1%;
+    padding-right: 1%;
+    height: 98%;
+    width: 100%;
+
+    color: var(--Headline);
+
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.goalsContentbox h3{
+    text-align: center;
+    font-family: berkley;
+}
+
+.lists{
+    display: flex;
+    flex-direction: row;
+    color: var(--Paragraph);
+}
+
+.listContainer{
+    width: 50%;
+    border: 1px solid var(--Background);
+}
+
+.listContainer ul li{
+    font-family: Quicksand;
+    font-size: 30px;
+    padding-bottom: 20px;
+}
+
+.links{
+    display: flex;
+    justify-content: space-between;
+    font-family: berkley;
+    padding-top: 13%;
+}
+
+.links span{
+    align-self: center;
+}
+
+.icons{
+    width: fit-content;
+    height: fit-content;
+
+    font-size: 50px;
+}
+
+.icons a{
+    text-decoration: none;
+    color: #7f5af0;
+}
+
+.contactMe{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    z-index: 1000;
+    transform: scale(0);
+    background-color: var(--Box);
+    width: 96%;
+    height: 90%;
+    top: 1020px
+}
+.contactMe.active {
+    transform: scale(1);
+}
+.contactInfo{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+.contactInfo h3{
+    text-align: center;
+    color: var(--Headline);
+    font-family: berkley;
+    padding-bottom: 100px;
+}
+
+.contactInfo span{
+    color: var(--ButtonText);
+    font-family: Quicksand;
+    font-size: 50px;
+    padding-bottom: 5%;
+    padding-left: 2%;
+}
+
+.cIcons{
+    display: flex;
+    
+}
+.cIcons a{
+    font-size: 50px;
+    text-decoration: none;
+    color: #7f5af0;
+    padding-top: 32%;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.contactForm{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+.contactForm h3{
+    text-align: center;
+    color: var(--Headline);
+    font-family: berkley;
+    padding-bottom: 100px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    width: 80%;
+    gap: 10%;
+}
+
+input, select, textarea{
+    padding: 10px;
+    background: var(--Background2);
+    border: 1px solid black;
+    color: var(--Headline);
+}
+
+textarea{
+    height: 475px;
+}
+
+.contactForm button{
+    padding: 10px;
+    cursor: pointer;
+    background: var(--Button);
+    color: var(--ButtonText);
+}
+
+.close{
+    position: absolute;
+    align-self: flex-end;
+    width: 60px;
+    height: 50px;
+    border: none;
+    background-color: transparent !important;
+    color: var(--Headline);
+    font-family: Quicksand;
+    font-size: 30px;
 }
 
 @keyframes slideIn{
@@ -294,29 +472,13 @@ section{
 }
 
 
-@keyframes spin_words{
-    5%{
-        top: -40px;
-    }
-    15%{
-        top: -340px;
-    }
-    30%{
-        top: -640px;
-    }
-    45%{
-        top: -940px;
-    }
-    60%{
-        top: -1240px;
-    }
-    75%{
-        top: -1540px;
-    }
-    90%{
-        top: -1840px;
-    }
-    100%{
-        top: -40px;
-    }
+@keyframes spinWords{
+    0% { opacity: 0; }
+    3% { opacity: 0; transform: translateY(-30px); }
+    6% { opacity: 1; transform: translateY(-10px);}
+    16% { opacity: 1; transform: translateY(-10px); }
+    17% { opacity: 0; transform: translateY(30px); }
+    80% { opacity: 0; }
+    100% { opacity: 0; }
+    
 }

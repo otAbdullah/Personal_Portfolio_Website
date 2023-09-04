@@ -11,6 +11,8 @@
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand">
 
+        <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-brands/css/uicons-brands.css'>
+
         <title>Document</title>
     </head>
     <body>
@@ -27,71 +29,126 @@
         </header>
 
 
-        <div class="container">
+        <section>
+            <div class="introContent">
+                <div class="greeting greeting-1">
+                    <span>Hello</span>
+                    <span>Bonjour</span>
+                    <span>您好</span>
+                    <span>Hola</span>
+                    <span>こんにちは</span>
+                    <span>Hallo</span>
+                    <span>Olá</span>
+                </div>
+                <h2><span>Welcome</span>&nbsp; to my Website Portfolio.</h2>
 
-            <section>
-                <div class="introContent">
-                    <div class="greeting">
-                        <span>
-                            Hello <br>
-                            Bonjour <br>
-                            您好 <br>
-                            Hola <br>
-                            こんにちは <br>
-                            Hallo <br>
-                            Olá <br>
-                        </span>
+                <div class="scrollNotif">
+                    <p>(↓There's more content below! scroll down!↓)</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="hidden">
+            <div class="miniContainer">
+                <div class="contentBox">
+                    <span>About Me:</span>
+                    <div>
+                        <p>I'm an 18-year-old with a strong focus on personal growth. My interests include coding, learning languages, art, cooking, gaming, and building computers. Despite my age, I've developed a well-rounded skill set, including logical thinking, hard work, problem-solving, confidence, and effective communication, with a particular passion for coding.</p>
                     </div>
-                    <h2><span>Welcome</span>&nbsp; to my Website Portfolio.</h2>
-    
-                    <div class="scrollNotif">
-                        <p>(↓There's more content below! scroll down!↓)</p>
+                    <div>
+                        <p class="pHeader">Always Striving to Improve</p>
+                        <p>I'm dedicated to growth and recently started learning Japanese and Arabic, aiming for practical use in Japan and Arabic-speaking regions. My journey is all about setting clear goals and working towards them.</p>
+                    </div>
+                    <div>
+                        <p class="pHeader">Passion for Coding</p>
+                        <p>Coding has been my thing since I was 14. I've learned various programming languages and technologies, which helps me think logically and tackle complex problems. Good communication is key in the tech world.</p>
+                    </div>
+                    <div>
+                        <p class="pHeader">Diverse Interests</p>
+                        <p>Apart from coding, I enjoy art, cooking new recipes, gaming for fun and strategy, and building computers, which combines tech knowledge with hands-on skills.</p>
+                    </div>
+                    <div>
+                        <p>In a nutshell, I'm 18, driven by growth, and well-prepared with skills that fit my varied interests. My journey is practical, goal-oriented, and centered around the world of software development and beyond.</p>
                     </div>
                 </div>
-            </section>
-    
-            <section class="hidden">
-                <div class="miniContainer">
-                    <div class="contentBox">
-                        <span>About Me:</span>
-                        <div>
-                            <p>I'm an 18-year-old with a strong focus on personal growth. My interests include coding, learning languages, art, cooking, gaming, and building computers. Despite my age, I've developed a well-rounded skill set, including logical thinking, hard work, problem-solving, confidence, and effective communication, with a particular passion for coding.</p>
-                        </div>
-                        <div>
-                            <p class="pHeader">Always Striving to Improve</p>
-                            <p>I'm dedicated to growth and recently started learning Japanese and Arabic, aiming for practical use in Japan and Arabic-speaking regions. My journey is all about setting clear goals and working towards them.</p>
-                        </div>
-                        <div>
-                            <p class="pHeader">Passion for Coding</p>
-                            <p>Coding has been my thing since I was 14. I've learned various programming languages and technologies, which helps me think logically and tackle complex problems. Good communication is key in the tech world.</p>
-                        </div>
-                        <div>
-                            <p class="pHeader">Diverse Interests</p>
-                            <p>Apart from coding, I enjoy art, cooking new recipes, gaming for fun and strategy, and building computers, which combines tech knowledge with hands-on skills.</p>
-                        </div>
-                        <div>
-                            <p>In a nutshell, I'm 18, driven by growth, and well-prepared with skills that fit my varied interests. My journey is practical, goal-oriented, and centered around the world of software development and beyond.</p>
-                        </div>
+                <div class="introduction">
+                    <div class="introText">
+                        <span class="line1">Nice to meet you!</span>
+                        <span class="line2">My name's Abdullah,</span>
+                        <span class="line3">Im currently 18 years old.</span>
+                        <span class="line4">Currently, im looking for oppertunitys to further <br> my skils and carrer goals.</span>
                     </div>
-                    <div class="introduction">
-                        <div class="introText">
-                            <span class="line1">Nice to meet you!</span>
-                            <span class="line2">My name's Abdullah,</span>
-                            <span class="line3">Im currently 18 years old.</span>
-                            <span class="line4">Currently, im looking for oppertunitys to further <br> my skils and carrer goals.</span>
-                        </div>
-                        <div class="contactButton">
-                            <span><a class="btn">Contact me!</a></span>
-                        </div>
+                    <div class="contactButton">
+                        <button data-modal-target="#modal"  class="btn" id="contact">Contact Me</button>
                     </div>
                 </div>
-            </section>
+                <div class="contactMe" id="modal">
+                    <div class="contactInfo">
+                        <h3>Contact Info</h3>
 
-            <section>
-    
-            </section>
+                        <span>Name: Abdullah Hussain</span>
+                        <span>Number: (+44)7907392926</span>
+                        <span>Email: 1abdullah.hussain05@gmail.com</span>
 
-        </div>
+                        <div class="cIcons">
+                            <a href="#placeholder"><i class="fi fi-brands-github"></i></a>
+                            <a href="#placeholder"><i class="fi fi-brands-linkedin"></i></a>
+                            <a href="#placeholder"><i class="fi fi-brands-discord"></i></a>
+                        </div>
+                    </div>
+                    <div class="contactForm">
+                        <h3>Contact Form <br> &nbsp; <br> (Send me an Email!)</h3>
+                        <button data-close-button class="close">X</button>
+                        <form action="https://formspree.io/f/xgejyzpk" method="POST" >
+                            <input type="text" name="Name" placeholder="Full Name" required>
+                            <input type="email" name="Email" placeholder="Email" required>
+                            <textarea name="Message" placeholder="Email Contents" required></textarea>
+                            <button type="submit">Send!</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="miniContainer">
+                <div class="goalsContentbox">
+                    <h3>My Current Goals</h3>
+                    <div class="lists">
+                        <div class="listContainer">
+                            <ul>
+                                <li>Study and Achieve a higher level of learning.</li>
+                                <li>Learn to build solid code, with good structure using fundementals.</li>
+                                <li>Getting an apprenticeship to further my experiance in both code and working with others.</li>
+                                <li>Learn to use Unreal engine to create games with depth and meaning</li>
+                                <li>Creating more projects and having them displayed on my Github page.</li>
+                            </ul>
+                        </div>
+                        <div class="listContainer">
+                            <ul>
+                                <li>to reach N5(level) in japanese</li>
+                                <li>to reach a level of understanding in Arabic</li>
+                                <li>to work abroad, either in Japan(first option), Canada or UAE</li>
+                                <li>to make some sort of media, some sort of art in which i can portray my ideas.</li>
+                                <li>making connections with other people.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="links">
+                        <span>Portfolio Website &lt;_Made By: Abdullah Hussain_&gt; </Made></span>
+
+                        <div class="icons">
+                            <a href="#placeholder"><i class="fi fi-brands-github"></i></a>
+                            <a href="#placeholder"><i class="fi fi-brands-linkedin"></i></a>
+                            <a href="#placeholder"><i class="fi fi-brands-discord"></i></a>
+                        </div>
+					
+                    </div>
+                </div>
+            </div>
+        </section>
+
+       
 
         <script src="Scripts.js"></script>
     </body>

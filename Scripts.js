@@ -39,3 +39,33 @@ let observer = new IntersectionObserver((entries, observer) => {
 document.querySelectorAll('.introduction span').forEach(span => {
    observer.observe(span);
 });
+
+
+const openContactsButton = document.querySelectorAll('[data-modal-target]')
+const closeContactsButton = document.querySelectorAll('[data-close-button]')
+
+openContactsButton.forEach(button => {
+    button.addEventListener('click', () => {
+        const Contacts = document.querySelector(button.dataset.modalTarget)
+        openContacts(modal)
+    })
+})
+
+closeContactsButton.forEach(button => {
+    button.addEventListener('click', () => {
+        const Contacts = button.closest('.contactForm')
+        closeContacts(modal)
+    })
+})
+
+function openContacts(modal){
+    if (modal == null) return
+    modal.classList.add('active')  
+
+}
+
+function closeContacts(modal){
+    if (modal == null) return
+    modal.classList.remove('active')  
+
+}
