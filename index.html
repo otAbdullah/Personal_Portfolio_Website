@@ -17,19 +17,19 @@
     </head>
     <body>
 
-        <header>
-            <div class="navBar">
-                <a class="hText" href="placeholder">://Huss.a</a>
-                <ul class="navUl">
-                    <li><a href="placeholder">://my <span>goals</span></a></li>
-                    <li><a href="placeholder">://about</a></li>
-                    <li><a href="placeholder">://contact</a></li>
-                </ul>
-            </div>
-        </header>
+        <section id="section1">
 
+            <header>
+                <div class="navBar">
+                    <a class="hText" href="#section1">://Huss.a</a>
+                    <ul class="navUl">
+                        <li><a href="#section3">://my <span>goals</span></a></li>
+                        <li><a href="#section2">://about</a></li>
+                        <li><a data-modal-target="#modal" id="contacts" href="#section2">://contact</a></li>
+                    </ul>
+                </div>
+            </header>
 
-        <section>
             <div class="introContent">
                 <div class="greeting greeting-1">
                     <span>Hello</span>
@@ -48,7 +48,9 @@
             </div>
         </section>
 
-        <section class="hidden">
+        
+
+        <section class="hidden" id="section2">
             <div class="miniContainer">
                 <div class="contentBox">
                     <span>About Me:</span>
@@ -86,13 +88,16 @@
                     <div class="contactInfo">
                         <h3>Contact Info</h3>
 
-                        <span>Name: Abdullah Hussain</span>
-                        <span>Number: (+44)7907392926</span>
-                        <span>Email: 1abdullah.hussain05@gmail.com</span>
+
+                        <div class="c-text">
+                            <span>Name: Abdullah Hussain</span>
+                            <span>Number: (+44)7907392926</span>
+                            <span>Email: 1abdullah.hussain05@gmail.com</span>
+                        </div>
 
                         <div class="cIcons">
-                            <a href="#placeholder"><i class="fi fi-brands-github"></i></a>
-                            <a href="#placeholder"><i class="fi fi-brands-linkedin"></i></a>
+                            <a href="https://github.com/otAbdullah"><i class="fi fi-brands-github"></i></a>
+                            <a href="https://www.linkedin.com/in/abdullah-hussain-24980328a/"><i class="fi fi-brands-linkedin"></i></a>
                             <a href="#placeholder"><i class="fi fi-brands-discord"></i></a>
                         </div>
                     </div>
@@ -110,7 +115,7 @@
             </div>
         </section>
 
-        <section>
+        <section id="section3">
             <div class="miniContainer">
                 <div class="goalsContentbox">
                     <h3>My Current Goals</h3>
@@ -138,8 +143,8 @@
                         <span>Portfolio Website &lt;_Made By: Abdullah Hussain_&gt; </Made></span>
 
                         <div class="icons">
-                            <a href="#placeholder"><i class="fi fi-brands-github"></i></a>
-                            <a href="#placeholder"><i class="fi fi-brands-linkedin"></i></a>
+                            <a href="https://github.com/otAbdullah"><i class="fi fi-brands-github"></i></a>
+                            <a href="https://www.linkedin.com/in/abdullah-hussain-24980328a/"><i class="fi fi-brands-linkedin"></i></a>
                             <a href="#placeholder"><i class="fi fi-brands-discord"></i></a>
                         </div>
 					
@@ -149,7 +154,7 @@
         </section>
 
        
-
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
         <script src="Scripts.js"></script>
     </body>
 </html>

@@ -69,3 +69,24 @@ function closeContacts(modal){
     modal.classList.remove('active')  
 
 }
+
+let sections = Array.from(document.querySelectorAll('section'));
+let currentIndex = 0;
+
+window.addEventListener('wheel', function(e) {
+  e.preventDefault();
+
+  // Determine scroll direction
+  if (e.deltaY > 0) {
+    // Scroll down
+    currentIndex = Math.min(currentIndex + 1, sections.length - 1);
+  } else {
+    // Scroll up
+    currentIndex = Math.max(currentIndex - 1, 0);
+  }
+
+  // Scroll to the section
+  sections[currentIndex].scrollIntoView({ behavior: 'smooth' });
+}, { passive: false });
+
+
