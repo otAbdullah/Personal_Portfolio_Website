@@ -12,8 +12,8 @@
 }
 
 html{
-    scroll-snap-type: y mandatory;
     scroll-padding-top: 50px;
+    overflow-x: hidden;
 }
 
 @font-face{
@@ -24,12 +24,17 @@ html{
 
 body{
     background: linear-gradient(var(--Background),var(--Background2));
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    margin-top: 50px !important;
     padding: 0;
     margin: 0;
+}
+
+.container{
+    width: 100%;
+    height: 100%;
 }
 
 .miniContainer{
@@ -42,9 +47,9 @@ body{
 
 section{
     height: 100vh;
-    scroll-snap-align: start;
-    scroll-snap-stop: always;
+    width: 100vw;
 }
+
 
 .navBar{
     display: flex;
@@ -123,8 +128,8 @@ section{
 }
 
 .introContent h2{
-    margin-top: 0px;
-    padding-top: 20px;
+    margin-top: 0;
+    padding-top: 2%;
     font-size: 40px;
     font-family: Quicksand;
     text-align: start;
@@ -135,14 +140,14 @@ section{
     font-family: Cookie;
     font-weight: 200;
     font-size: 120px;
-    padding-right: 20px;
+    padding-right: 1%;
 }
 
 .greeting{
     display: flex;
     flex-direction: column;
     text-align: center;
-    padding-bottom: 40px;
+    padding-bottom: 2%;
     line-height: 300px;
     height: 200px;
     max-height: 200px;
@@ -253,14 +258,14 @@ section{
 }
 
 .line1{
-    padding-bottom: 30px;
+    padding-bottom: 3%;
     font-size: 105px;
 }
 .line2{
     font-size: 60px;
 }
 .line3{
-    padding-bottom: 300px;
+    padding-bottom: 30%;
     font-size: 60px;
 }
 .line4{
@@ -283,6 +288,7 @@ section{
     font-family: berkley;
     font-size: 35px;
     text-decoration: none;
+    cursor: pointer;
     color: var(--ButtonText);
 }
 
@@ -320,7 +326,7 @@ section{
 .listContainer ul li{
     font-family: Quicksand;
     font-size: 30px;
-    padding-bottom: 20px;
+    padding-bottom: 2%;
 }
 
 .links{
@@ -355,7 +361,6 @@ section{
     background-color: var(--Box);
     width: 96%;
     height: 90%;
-    top: 1020px
 }
 .contactMe.active {
     transform: scale(1);
@@ -364,15 +369,21 @@ section{
     display: flex;
     flex-direction: column;
     width: 50%;
+    justify-content: space-between;
 }
 .contactInfo h3{
     text-align: center;
     color: var(--Headline);
     font-family: berkley;
-    padding-bottom: 100px;
 }
 
-.contactInfo span{
+.c-text{
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+}
+
+.c-text span{
     color: var(--ButtonText);
     font-family: Quicksand;
     font-size: 50px;
@@ -388,9 +399,8 @@ section{
     font-size: 50px;
     text-decoration: none;
     color: #7f5af0;
-    padding-top: 32%;
-    padding-right: 20px;
-    padding-left: 20px;
+    padding-right: 2%;
+    padding-left: 5%;
 }
 
 .contactForm{
@@ -402,7 +412,7 @@ section{
     text-align: center;
     color: var(--Headline);
     font-family: berkley;
-    padding-bottom: 100px;
+    padding-bottom: 8%;
 }
 
 form{
@@ -410,18 +420,18 @@ form{
     flex-direction: column;
     align-self: center;
     width: 80%;
-    gap: 10%;
 }
 
 input, select, textarea{
     padding: 10px;
+    margin-bottom: 10%;
     background: var(--Background2);
     border: 1px solid black;
     color: var(--Headline);
 }
 
 textarea{
-    height: 475px;
+    height: 300px;
 }
 
 .contactForm button{
@@ -434,8 +444,8 @@ textarea{
 .close{
     position: absolute;
     align-self: flex-end;
-    width: 60px;
-    height: 50px;
+    width: 4%;
+    height: 5%;
     border: none;
     background-color: transparent !important;
     color: var(--Headline);
