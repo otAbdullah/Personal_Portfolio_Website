@@ -60,6 +60,7 @@ section{
     right: 0;
     background-color: var(--Background);
     opacity: 100%;
+    height: 50px;
 
     box-shadow: 0px -5px 10px 0px rgba(0, 0, 0, 1);
     justify-content: space-between;
@@ -230,7 +231,7 @@ section{
 .contentBox p{
     color: var(--Paragraph);
     font-family: Quicksand;
-    font-size: 20px;
+    font-size: 1.3rem;
 }
 
 
@@ -290,6 +291,7 @@ section{
     text-decoration: none;
     cursor: pointer;
     color: var(--ButtonText);
+    border: 1px solid var(--Box);
 }
 
 .goalsContentbox{
@@ -350,6 +352,7 @@ section{
 .icons a{
     text-decoration: none;
     color: #7f5af0;
+    cursor: pointer;
 }
 
 .contactMe{
@@ -451,6 +454,736 @@ textarea{
     color: var(--Headline);
     font-family: Quicksand;
     font-size: 30px;
+}
+
+div.second{
+    display: none;
+}
+section.second{
+    display: none;
+}
+
+#hamburger-menu {
+    display: inline-block;
+    border: none;
+    background: var(--Background);
+    font-size: 2.2rem;
+    font-family: berkley;
+    
+}
+
+#hamburger-menu #sidebar-menu {
+    background-color: var(--Box);
+    visibility: hidden;
+    position: fixed;
+    top: 52px;
+    left: -250px;
+    width: 275px;
+    transition: 0.3s;
+}
+
+#sidebar-menu h3 {
+    font-family: Sandstorm;
+    text-align: center;
+}
+
+#sidebar-menu ul {
+    padding-left: 2%;
+}
+
+#sidebar-menu li {
+    list-style: none;
+}
+
+#sidebar-menu li a{
+    text-decoration: none;
+    list-style: none;
+    color: var(--Headline);
+}
+
+
+@media screen and (max-height: 919px),
+screen and (max-width: 1755) {
+    .contentBox p{
+        
+        font-size: 1.2rem;
+    }
+
+    .line1{
+        padding-bottom: 3%;
+        font-size: 80px;
+    }
+    .line2{
+        font-size: 50px;
+    }
+    .line3{
+        padding-bottom: 30%;
+        font-size: 50px;
+    }
+    .line4{
+        font-size: 30px;
+    }
+
+    .links{
+        padding-top: 12%;
+    }
+
+
+}
+
+@media screen and (max-height: 869px),
+screen and (max-width: 1660) {
+    .contentBox p{
+        
+        font-size: 1.1rem;
+    }
+
+    .line1{
+        padding-bottom: 3%;
+        font-size: 80px;
+    }
+    .line2{
+        font-size: 50px;
+    }
+    .line3{
+        padding-bottom: 30%;
+        font-size: 50px;
+    }
+    .line4{
+        font-size: 30px;
+    }
+
+    .links{
+        padding-top: 12%;
+    }
+}
+
+@media screen and (max-width: 1341px) {
+    .links{
+        padding-top: 10%;
+    }
+}
+
+@media screen and (max-height: 850px),
+screen and (max-width: 1340) {
+    .contentBox p{
+        font-size: 1rem;
+    }
+    .links{
+        padding-top: 9%;
+    }
+}
+
+@media screen and (max-height: 755px),
+screen and (max-width: 1140px) {
+    .contentBox p{
+        font-size: 0.9rem;
+    }
+
+    .line1{
+        padding-bottom: 3%;
+        font-size: 66px;
+    }
+    .line2{
+        font-size: 35px;
+    }
+    .line3{
+        padding-bottom: 55%;
+        font-size: 35px;
+    }
+    .line4{
+        font-size: 25px;
+    }
+
+    .links{
+        padding-top: 12%;
+    }
+}
+
+@media screen and (max-height: 730px) {
+    .line3{
+        padding-bottom: 45%;
+        font-size: 35px;
+    }
+}
+
+@media screen and (max-height: 685px),
+screen and (max-width: 1128px) {
+    .contentBox p{
+        font-size: 0.8rem;
+    }
+    .links{
+        padding-top: 7%;
+    }
+    .listContainer ul li{
+        font-family: Quicksand;
+        font-size: 1.5rem;
+        padding-bottom: 2%;
+    }
+
+}
+
+@media screen and (max-height: 673px),
+screen and (max-width: 974px) {
+    .contentBox p{
+        font-size: 0.8rem;
+    }
+    .links{
+        padding-top: 6%;
+    }
+    .listContainer ul li{
+        font-family: Quicksand;
+        font-size: 1.5rem;
+        padding-bottom: 2%;
+    }
+
+    .line1{
+        padding-bottom: 3%;
+        font-size: 60px;
+    }
+    .line2{
+        font-size: 30px;
+    }
+    .line3{
+        padding-bottom: 47%;
+        font-size: 30px;
+    }
+    .line4{
+        font-size: 1.4rem;
+    }
+
+    .greeting-1 span{
+        font-size: 120px;
+        
+    }
+
+    .introContent h2{
+        font-size: 25px;
+    }
+    
+    .introContent h2 span{
+        font-size: 85px;
+
+    }
+
+    .hText{
+        display: flex;
+        flex: 2;
+        align-items: center;
+        padding-left: 3%;
+    
+        font-size: 0.9rem;
+    }
+    
+    .navUl li a{
+        font-size: 0.9rem;
+        text-decoration: none;
+        color: var(--Headline);
+        position: relative;
+        padding-bottom: 5px;
+    }
+
+}
+
+@media screen and (max-height: 665px),
+screen and (max-width: 974px) {
+    .contentBox p{
+        font-size: 0.7rem;
+    }
+    .links{
+        padding-top: 6%;
+    }
+}
+
+@media screen and (max-width: 810px) {
+    .contentBox p{
+        font-size: 1.3rem;
+    }
+    .links{
+        padding-top: 6%;
+    }
+    .listContainer ul li{
+        font-family: Quicksand;
+        font-size: 1.5rem;
+        padding-bottom: 2%;
+    }
+
+    .line1{
+        padding-top: 5%;
+        padding-bottom: 3%;
+        font-size: 80px;
+    }
+    .line2{
+        font-size: 45px;
+    }
+    .line3{
+        padding-bottom: 35%;
+        font-size: 45px;
+    }
+    .line4{
+        font-size: 1.9rem;
+        padding-bottom: 10%;
+    }
+
+    .greeting-1 span{
+        font-size: 120px;
+        
+    }
+
+    .introContent h2{
+        font-size: 25px;
+    }
+    
+    .introContent h2 span{
+        font-size: 85px;
+
+    }
+
+    .hText{
+        display: flex;
+        flex: 2;
+        align-items: center;
+        padding-left: 3%;
+    
+        font-size: 0.9rem;
+    }
+    
+    .navUl li a{
+        font-size: 0.9rem;
+        text-decoration: none;
+        color: var(--Headline);
+        position: relative;
+        padding-bottom: 5px;
+    }
+
+    .miniContainer{
+        padding-top: 5%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    div.first{
+        display: none;
+    }
+    div.second{
+        display: flex;
+    }
+    section.second{
+        display: flex;
+    }
+
+    .contactButton{
+        display: flex;
+        justify-content: end;
+        padding-bottom: 10%;
+    }
+
+    .contentBox{
+        display: flex;
+        flex-direction: column;
+        z-index: 10;
+        background-color: var(--Box);
+        width: 98%;
+        height: 98%;
+        padding-left: 1%;
+        padding-right: 1%;
+        text-align: center;
+    
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    }
+
+    .listContainer{
+        width: 50%;
+        border: 1px solid var(--Background);
+    }
+
+    .goalsContentbox{
+        height: 98%;
+        width: 98%;
+    }
+
+    .listContainer ul li{
+        font-family: Quicksand;
+        font-size: 20px;
+        padding-bottom: 2%;
+    }
+
+    .links{
+        padding-top: 62%;
+    }
+
+    .greeting-1 span{
+        font-size: 120px;
+        
+    }
+
+    .introContent h2{
+        font-size: 25px;
+    }
+    
+    .introContent h2 span{
+        font-size: 85px;
+
+    }
+
+    .introContent{
+        display: flex;
+        flex-direction: column;
+        margin-left: 18%;
+        margin-right: 18%;
+        padding-top: 20%;
+    
+        color: var(--Headline);
+    }
+
+    .hText{
+        display: flex;
+        flex: 2;
+        align-items: center;
+        padding-left: 3%;
+    
+        font-size: 0.9rem;
+    }
+    
+    .navUl li a{
+        font-size: 0.7rem;
+        text-decoration: none;
+        color: var(--Headline);
+        position: relative;
+        padding-bottom: 5px;
+    }
+
+    .navBar{
+        justify-content: end;
+        padding-right: 2%;
+    }
+
+
+    .contactInfo{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        text-align: center;
+        width: 100%;
+    }
+
+    .contactForm{
+        width: 100%;
+    }
+    
+    input, select, textarea{
+        padding: 10px;
+        margin-bottom: 5%;
+        background: var(--Background2);
+        border: 1px solid black;
+        color: var(--Headline);
+    }
+    
+    textarea{
+        height: 150px;
+    }
+
+    .contactForm h3{
+        text-align: center;
+        color: var(--Headline);
+        font-family: berkley;
+        padding-bottom: 4%;
+    }
+
+    .close{
+        position: absolute;
+        align-self: flex-end;
+        width: 4%;
+        height: 5%;
+        border: none;
+        background-color: transparent !important;
+        color: var(--Headline);
+        font-family: Quicksand;
+        font-size: 30px;
+        margin-right: 10px;
+        cursor: pointer;
+    }
+
+    .contactMe{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        z-index: 1000;
+        transform: scale(0);
+        background-color: var(--Box);
+        text-align: center;
+        
+    }
+
+    .contactMe.active {
+        transform: scale(1);
+    }
+
+}
+
+@media screen and (max-width: 400px) {
+    section.second{
+        display: flex;
+    }
+    #hamburger-menu #sidebar-menu {
+        background-color: var(--Box);
+        visibility: hidden;
+        position: fixed;
+        top: 52px;
+        left: -250px;
+        width: 100vw;
+        transition: 0.3s;
+        text-align: center;
+    }
+
+    .greeting span{
+        font-size: 3rem;
+        padding-top: 30px;
+        padding-left: 15px;
+    }
+
+    .introContent{
+        display: flex;
+        flex-direction: column;
+        margin-left: 18%;
+        margin-right: 18%;
+    
+        color: var(--Headline);
+    }
+    
+    .introContent h2{
+        margin-top: 0;
+        padding-top: 2%;
+        font-size: 25px;
+        font-family: Quicksand;
+        text-align: center;
+    }
+
+    .introContent h2 span{
+        font-size: 50px;
+    }
+
+    .line1{
+        padding-top: 5%;
+        padding-bottom: 10%;
+        font-size: 40px;
+    }
+    .line2{
+        font-size: 25px;
+    }
+    .line3{
+        padding-bottom: 50%;
+        font-size: 25px;
+    }
+    .line4{
+        font-size: 1.2rem;
+        padding-bottom: 25%;
+    }
+
+    .contactButton{
+        justify-content: center;
+    }
+    .btn{
+        padding: 2px;
+        font-size: 25px;
+        border: 1px solid var(--Box);
+    }
+
+    .contentBox p{
+        font-size: 0.89rem;
+    }
+    .links{
+        padding-top: 21%;
+        font-size: 0.5rem;
+    }
+    .icons{
+        font-size: 1.6rem;
+    }
+    .listContainer ul li{
+        font-family: Quicksand;
+        font-size: 1rem;
+        padding-bottom: 2%;
+        padding-right: 2%;
+    }
+}
+
+@media screen and (max-height: 667px),
+screen and (max-width: 375) {
+    section.second{
+        display: flex;
+    }
+    #hamburger-menu #sidebar-menu {
+        background-color: var(--Box);
+        visibility: hidden;
+        position: fixed;
+        top: 52px;
+        left: -250px;
+        width: 100vw;
+        transition: 0.3s;
+        text-align: center;
+    }
+
+    .greeting span{
+        font-size: 3rem;
+        padding-top: 30px;
+        padding-left: 15px;
+    }
+
+    .introContent{
+        display: flex;
+        flex-direction: column;
+        margin-left: 18%;
+        margin-right: 18%;
+    
+        color: var(--Headline);
+    }
+    
+    .introContent h2{
+        margin-top: 0;
+        padding-top: 2%;
+        font-size: 25px;
+        font-family: Quicksand;
+        text-align: center;
+    }
+
+    .introContent h2 span{
+        font-size: 50px;
+    }
+
+    .line1{
+        padding-top: 5%;
+        padding-bottom: 10%;
+        font-size: 40px;
+    }
+    .line2{
+        font-size: 25px;
+    }
+    .line3{
+        padding-bottom: 50%;
+        font-size: 25px;
+    }
+    .line4{
+        font-size: 1.2rem;
+        padding-bottom: 25%;
+    }
+
+    .contactButton{
+        justify-content: center;
+    }
+    .btn{
+        padding: 2px;
+        font-size: 25px;
+        
+    }
+
+    .contentBox p{
+        font-size: 0.78rem;
+    }
+    .links{
+        padding-top: 17%;
+        font-size: 0.5rem;
+    }
+    .icons{
+        font-size: 1.2rem;
+    }
+    .listContainer ul li{
+        font-family: Quicksand;
+        font-size: .9rem;
+        padding-bottom: 2%;
+        padding-right: 2%;
+    }
+
+}
+
+@media screen and (max-height: 543px),
+screen and (max-width: 273) {
+    section.second{
+        display: flex;
+    }
+    #hamburger-menu #sidebar-menu {
+        background-color: var(--Box);
+        visibility: hidden;
+        position: fixed;
+        top: 52px;
+        left: -250px;
+        width: 100vw;
+        transition: 0.3s;
+        text-align: center;
+    }
+
+    .greeting span{
+        font-size: 2rem;
+        padding-top: 37px;
+        padding-left: 10px;
+    }
+
+    .introContent{
+        display: flex;
+        flex-direction: column;
+        margin-left: 18%;
+        margin-right: 18%;
+    
+        color: var(--Headline);
+    }
+    
+    .introContent h2{
+        margin-top: 0;
+        padding-top: 2%;
+        font-size: 16px;
+        font-family: Quicksand;
+        text-align: center;
+    }
+
+    .introContent h2 span{
+        font-size: 40px;
+    }
+
+    .line1{
+        padding-top: 5%;
+        padding-bottom: 10%;
+        font-size: 35px;
+    }
+    .line2{
+        font-size: 20px;
+    }
+    .line3{
+        padding-bottom: 50%;
+        font-size: 20px;
+    }
+    .line4{
+        font-size: 1.2rem;
+        padding-bottom: 20%;
+    }
+
+    .contactButton{
+        justify-content: center;
+    }
+    .btn{
+        padding: 2px;
+        font-size: 25px;
+        
+    }
+
+    .contentBox p{
+        font-size: 0.6rem;
+    }
+    .links{
+        padding-top: 3%;
+        font-size: 0.4rem;
+    }
+    .icons{
+        font-size: 1rem;
+    }
+    .listContainer ul li{
+        font-family: Quicksand;
+        font-size: .77rem;
+        padding-bottom: 2%;
+        padding-right: 2%;
+    }
+    .listContainer ul{
+        padding-left: 10%;
+    }
+
 }
 
 @keyframes slideIn{

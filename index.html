@@ -20,7 +20,7 @@
         <section id="section1">
 
             <header>
-                <div class="navBar">
+                <div class="navBar first">
                     <a class="hText" href="#section1">://Huss.a</a>
                     <ul class="navUl">
                         <li><a href="#section3">://my <span>goals</span></a></li>
@@ -29,6 +29,22 @@
                     </ul>
                 </div>
             </header>
+
+            <div class="navBar second">
+                <label id="hamburger-menu">
+                    ☰
+                    <nav id="sidebar-menu">
+                      <h3>Menu</h3>
+                      <ul>
+                        <li><a href="#section4">Introduction</a></li>
+                        <li><a href="#section2">About_Me</a></li>
+                        <li><a href="#section3">My_goals</a></li>
+                        <li><a href="#section2">Contact</a></li>
+                      </ul>
+                    </nav>
+                </label>
+                <div class="overlay"></div>
+            </div>
 
             <div class="introContent">
                 <div class="greeting greeting-1">
@@ -51,7 +67,7 @@
         
 
         <section class="hidden" id="section2">
-            <div class="miniContainer">
+            <div class="miniContainer first">
                 <div class="contentBox">
                     <span>About Me:</span>
                     <div>
@@ -63,14 +79,14 @@
                     </div>
                     <div>
                         <p class="pHeader">Passion for Coding</p>
-                        <p>Coding has been my thing since I was 14. I've learned various programming languages and technologies, which helps me think logically and tackle complex problems. Good communication is key in the tech world.</p>
+                        <p>Coding has been my thing since I was 14. I've learned various programming languages and technologies, which helps me think logically and tackle complex problems. i believe that good communication is key when working as a team.</p>
                     </div>
                     <div>
                         <p class="pHeader">Diverse Interests</p>
                         <p>Apart from coding, I enjoy art, cooking new recipes, gaming for fun and strategy, and building computers, which combines tech knowledge with hands-on skills.</p>
                     </div>
                     <div>
-                        <p>In a nutshell, I'm 18, driven by growth, and well-prepared with skills that fit my varied interests. My journey is practical, goal-oriented, and centered around the world of software development and beyond.</p>
+                        <p>In a nutshell, I'm 18, driven by growth, and well-prepared with skills that fit my varied interests. My journey is practical, goal-oriented, and centered around the world of software development and whatever else lies ahead.</p>
                     </div>
                 </div>
                 <div class="introduction">
@@ -78,7 +94,7 @@
                         <span class="line1">Nice to meet you!</span>
                         <span class="line2">My name's Abdullah,</span>
                         <span class="line3">Im currently 18 years old.</span>
-                        <span class="line4">Currently, im looking for oppertunitys to further <br> my skils and carrer goals.</span>
+                        <span class="line4">Currently, im looking for opportunities to further <br> my skils and career goals.</span>
                     </div>
                     <div class="contactButton">
                         <button data-modal-target="#modal"  class="btn" id="contact">Contact Me</button>
@@ -98,7 +114,7 @@
                         <div class="cIcons">
                             <a href="https://github.com/otAbdullah"><i class="fi fi-brands-github"></i></a>
                             <a href="https://www.linkedin.com/in/abdullah-hussain-24980328a/"><i class="fi fi-brands-linkedin"></i></a>
-                            <a href="#placeholder"><i class="fi fi-brands-discord"></i></a>
+                            <a><i class="fi fi-brands-discord" onclick="copyToClipboard('abdulla.h_.')"></i></a>
                         </div>
                     </div>
                     <div class="contactForm">
@@ -113,7 +129,80 @@
                     </div>
                 </div>
             </div>
+            
+            <div class="miniContainer second">
+                <div class="introduction">
+                    <div class="introText">
+                        <span class="line1">Nice to meet you!</span>
+                        <span class="line2">My name's Abdullah,</span>
+                        <span class="line3">Im currently 18 years old.</span>
+                        <span class="line4">Currently, im looking for opportunities to further my skils and career goals.</span>
+                    </div>
+                    <div class="contactButton">
+                        <button data-modal-target="#modal1"  class="btn" id="contact">Contact Me</button>
+                    </div>
+                </div>
+                <div id="modal1" class="contactMe">
+                    <div class="contactInfo">
+                        <button data-close-button class="close">X</button>
+                        <h3>Contact Info</h3>
+
+                        <div class="c-text">
+                            
+                            <span>Name: Abdullah Hussain</span>
+                            <span>Number: (+44)7907392926</span>
+                            <span>Email: 1abdullah.hussain05@gmail.com</span>
+                        </div>
+                    </div>
+                    <div class="contactForm">
+                        <h3>Contact Form <br> &nbsp; <br> (Send me an Email!)</h3>
+                        <form action="https://formspree.io/f/xgejyzpk" method="POST" >
+                            <input type="text" name="Name" placeholder="Full Name" required>
+                            <input type="email" name="Email" placeholder="Email" required>
+                            <textarea name="Message" placeholder="Email Contents" required></textarea>
+                            <button type="submit">Send!</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
         </section>
+
+
+
+
+
+        <section id="section4" class="second">
+            <div class="miniContainer second">
+                <div class="contentBox">
+                    <span>About Me:</span>
+                    <div>
+                        <p>I'm an 18-year-old with a strong focus on personal growth. My interests include coding, learning languages, art, cooking, gaming, and building computers. Despite my age, I've developed a well-rounded skill set, including logical thinking, hard work, problem-solving, confidence, and effective communication, with a particular passion for coding.</p>
+                    </div>
+                    <div>
+                        <p class="pHeader">Always Striving to Improve</p>
+                        <p>I'm dedicated to growth and recently started learning Japanese and Arabic, aiming for practical use in Japan and Arabic-speaking regions. My journey is all about setting clear goals and working towards them.</p>
+                    </div>
+                    <div>
+                        <p class="pHeader">Passion for Coding</p>
+                        <p>Coding has been my thing since I was 14. I've learned various programming languages and technologies, which helps me think logically and tackle complex problems. i believe that good communication is key when working as a team.</p>
+                    </div>
+                    <div>
+                        <p class="pHeader">Diverse Interests</p>
+                        <p>Apart from coding, I enjoy art, cooking new recipes, gaming for fun and strategy, and building computers, which combines tech knowledge with hands-on skills.</p>
+                    </div>
+                    <div>
+                        <p>In a nutshell, I'm 18, driven by growth, and well-prepared with skills that fit my varied interests. My journey is practical, goal-oriented, and centered around the world of software development and whatever else lies ahead.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+
+
 
         <section id="section3">
             <div class="miniContainer">
@@ -131,11 +220,11 @@
                         </div>
                         <div class="listContainer">
                             <ul>
-                                <li>to reach N5(level) in japanese</li>
-                                <li>to reach a level of understanding in Arabic</li>
-                                <li>to work abroad, either in Japan(first option), Canada or UAE</li>
-                                <li>to make some sort of media, some sort of art in which i can portray my ideas.</li>
-                                <li>making connections with other people.</li>
+                                <li>To reach N5(level) in japanese</li>
+                                <li>To reach a level of understanding in Arabic</li>
+                                <li>To work abroad, either in Japan(first option), Canada or UAE</li>
+                                <li>To make some sort of media, some sort of art in which i can portray my ideas.</li>
+                                <li>Making connections with other people.</li>
                             </ul>
                         </div>
                     </div>
@@ -145,7 +234,7 @@
                         <div class="icons">
                             <a href="https://github.com/otAbdullah"><i class="fi fi-brands-github"></i></a>
                             <a href="https://www.linkedin.com/in/abdullah-hussain-24980328a/"><i class="fi fi-brands-linkedin"></i></a>
-                            <a href="#placeholder"><i class="fi fi-brands-discord"></i></a>
+                            <a><i class="fi fi-brands-discord" onclick="copyToClipboard('abdulla.h_.')"></i></a>
                         </div>
 					
                     </div>
@@ -153,7 +242,8 @@
             </div>
         </section>
 
-       
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="followPopup.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
         <script src="Scripts.js"></script>
     </body>

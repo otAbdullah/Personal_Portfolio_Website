@@ -41,34 +41,34 @@ document.querySelectorAll('.introduction span').forEach(span => {
 });
 
 
-const openContactsButton = document.querySelectorAll('[data-modal-target]')
-const closeContactsButton = document.querySelectorAll('[data-close-button]')
+// Select all elements with a data-modal-target attribute
+const openModalButtons = document.querySelectorAll('[data-modal-target]');
 
-openContactsButton.forEach(button => {
+// Select all elements with a data-close-button attribute
+const closeModalButtons = document.querySelectorAll('[data-close-button]');
+
+// Loop over each button with a data-modal-target attribute
+openModalButtons.forEach(button => {
     button.addEventListener('click', () => {
-        const Contacts = document.querySelector(button.dataset.modalTarget)
-        openContacts(modal)
-    })
-})
+        // Get the CSS selector of the modal to open
+        const modalSelector = button.getAttribute('data-modal-target');
 
-closeContactsButton.forEach(button => {
+        // Select the modal and add the 'active' class to open it
+        const modal = document.querySelector(modalSelector);
+        modal.classList.add('active');
+    });
+});
+
+// Loop over each button with a data-close-button attribute
+closeModalButtons.forEach(button => {
     button.addEventListener('click', () => {
-        const Contacts = button.closest('.contactForm')
-        closeContacts(modal)
-    })
-})
+        // Find the closest ancestor element with the 'modal' class
+        const modal = button.closest('.contactMe');
 
-function openContacts(modal){
-    if (modal == null) return
-    modal.classList.add('active')  
-
-}
-
-function closeContacts(modal){
-    if (modal == null) return
-    modal.classList.remove('active')  
-
-}
+        // Remove the 'active' class to close the modal
+        modal.classList.remove('active');
+    });
+});
 
 let sections = Array.from(document.querySelectorAll('section'));
 let currentIndex = 0;
@@ -88,5 +88,29 @@ window.addEventListener('wheel', function(e) {
   // Scroll to the section
   sections[currentIndex].scrollIntoView({ behavior: 'smooth' });
 }, { passive: false });
+
+function copyToClipboard(text) {
+    const textarea = document.createElement('textarea');
+    textarea.value = text;
+    document.body.appendChild(textarea);
+    textarea.select();
+    document.execCommand('copy');
+    document.body.removeChild(textarea);
+    alert("Discord Tag copied");
+}
+
+let hamburgerMenu = document.getElementById("hamburger-menu");
+
+hamburgerMenu.addEventListener("click", function() {
+  let sidebarMenu = document.getElementById("sidebar-menu");
+
+  if (sidebarMenu.style.visibility === "hidden") {
+    sidebarMenu.style.visibility = "visible";
+    sidebarMenu.style.left = "0px";
+  } else {
+    sidebarMenu.style.visibility = "hidden";
+    sidebarMenu.style.left = "-250px";
+  }
+});
 
 
