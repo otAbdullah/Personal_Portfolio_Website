@@ -558,9 +558,283 @@ section.second{
     }
 }
 
+@media only screen and (max-width: 756px){
+    .links{
+        padding-top: 34%;
+    }
+    div.first{
+        display: none;
+    }
+    div.second{
+        display: flex;
+    }
+    section.second{
+        display: flex;
+    }
+    .navBar{
+        justify-content: end;
+    }
+    #hamburger-menu {
+        padding-right: 2%;
+    }
+    .greeting span{
+        font-size: 6rem;
+    }
+    .introContent h2{
+        font-size: 2rem;
+    }
+    .introContent h2 span{
+        font-size: 6rem;
+    }
+    .line1{
+        font-size: 5rem;
+    }
+    .line2{
+        font-size: 3rem;
+    }
+    .line3{
+        font-size: 3rem;
+        padding-bottom: 75%;
+    }
+    .line4{
+        font-size: 2.2rem;
+    }
+    .contentBox{
+        width: 100%;
+    }
+    .listContainer ul li{
+        font-family: Quicksand;
+        font-size: 1.5rem;
+        padding-bottom: 2%;
+    }
+    .listContainer ul{
+        padding-left: 15%;
+    }
+    .contentBox p{
+        font-size: 1.2rem;
+    }
+    .icons{
+        font-size: 2.9rem;
+    }
+    .links span{
+        font-size: .9rem;
+    }
+    .scrollNotif{
+        font-size: 1rem;
+    }
+}
+@media only screen and (max-width: 650px){
+    .links{
+        padding-top: 26%;
+    }
+    .icons{
+        font-size: 2.6rem;
+    }
+    .links span{
+        font-size: .8rem;
+    }
+}
+@media only screen and (max-width: 600px){
+    .links{
+        padding-top: 28%;
+    }
+    .icons{
+        font-size: 2.2rem;
+    }
+    .links span{
+        font-size: .7rem;
+    }
+
+    .greeting span{
+        font-size: 5rem;
+    }
+    .introContent h2{
+        font-size: 1.8rem;
+    }
+    .introContent h2 span{
+        font-size: 5rem;
+    }
+    .line1{
+        font-size: 4rem;
+    }
+    .line2{
+        font-size: 2.5rem;
+    }
+    .line3{
+        font-size: 2.5rem;
+        padding-bottom: 75%;
+    }
+    .line4{
+        font-size: 1.7rem;
+    }
+    .contentBox{
+        width: 100%;
+    }
+    .listContainer ul li{
+        font-family: Quicksand;
+        font-size: 1.5rem;
+        padding-bottom: 2%;
+    }
+    .listContainer ul{
+        padding-left: 15%;
+    }
+    .contentBox p{
+        font-size: 1.1rem;
+    }
+}
+
+@media only screen and (max-width: 556px){
+    .links{
+        padding-top: 49%;
+    }
+    .icons{
+        font-size: 2.2rem;
+    }
+    .links span{
+        font-size: .7rem;
+    }
+
+    .greeting span{
+        font-size: 4.5rem;
+    }
+    .introContent h2{
+        font-size: 1.4rem;
+    }
+    .introContent h2 span{
+        font-size: 4.5rem;
+    }
+    .line1{
+        font-size: 3.7rem;
+    }
+    .line2{
+        font-size: 2rem;
+    }
+    .line3{
+        font-size: 2rem;
+        padding-bottom: 75%;
+    }
+    .line4{
+        font-size: 1.4rem;
+    }
+    .contentBox{
+        width: 100%;
+    }
+    .listContainer ul li{
+        font-family: Quicksand;
+        font-size: 1.3rem;
+        padding-bottom: 2%;
+    }
+    .listContainer ul{
+        padding-left: 15%;
+    }
+    .contentBox p{
+        font-size: 1.1rem;
+    }
+}
+
+@media only screen and (max-width: 508px){
+    .links{
+        padding-top: 56%;
+    }
+    .icons{
+        font-size: 2rem;
+    }
+    .links span{
+        font-size: .6rem;
+    }
+
+    .greeting span{
+        font-size: 4rem;
+        padding-top: 6%;
+    }
+    .introContent h2{
+        font-size: 1.3rem;
+    }
+    .introContent h2 span{
+        font-size: 4rem;
+    }
+    .line1{
+        font-size: 3.3rem;
+    }
+    .line2{
+        font-size: 1.8rem;
+    }
+    .line3{
+        font-size: 1.8rem;
+        padding-bottom: 75%;
+    }
+    .line4{
+        font-size: 1.4rem;
+    }
+    .contentBox{
+        width: 100%;
+    }
+    .listContainer ul li{
+        font-family: Quicksand;
+        font-size: 1.2rem;
+        padding-bottom: 2%;
+    }
+    .listContainer ul{
+        padding-left: 15%;
+    }
+    .contentBox p{
+        font-size: 1.1rem;
+    }
+}
+
+@media only screen and (max-width: 453px){
+    .links{
+        padding-top: 38%;
+    }
+    .icons{
+        font-size: 1.8rem;
+    }
+    .links span{
+        font-size: .5rem;
+    }
+
+    .greeting span{
+        font-size: 3.7rem;
+        padding-top: 6%;
+    }
+    .introContent h2{
+        font-size: 1.2rem;
+    }
+    .introContent h2 span{
+        font-size: 3.7rem;
+    }
+    .line1{
+        font-size: 2.9rem;
+    }
+    .line2{
+        font-size: 1.4rem;
+    }
+    .line3{
+        font-size: 1.4rem;
+        padding-bottom: 75%;
+    }
+    .line4{
+        font-size: 1.1rem;
+    }
+    .contentBox{
+        width: 100%;
+    }
+    .listContainer ul li{
+        font-family: Quicksand;
+        font-size: 1.3rem;
+        padding-bottom: 2%;
+    }
+    .listContainer ul{
+        padding-left: 15%;
+    }
+    .contentBox p{
+        font-size: 1.1rem;
+    }
+}
+
 @media only screen and (max-width: 420px){
     .links{
-        padding-top: 51%;
+        padding-top: 52%;
     }
     div.first{
         display: none;
@@ -616,6 +890,73 @@ section.second{
     }
     .links span{
         font-size: 0.6rem;
+    }
+}
+
+@media only screen and (max-width: 410px){
+    .links{
+        padding-top: 64%;
+    }
+    div.first{
+        display: none;
+    }
+    div.second{
+        display: flex;
+    }
+    section.second{
+        display: flex;
+    }
+    .navBar{
+        justify-content: end;
+    }
+    #hamburger-menu {
+        padding-right: 7%;
+    }
+    .greeting span{
+        font-size: 3rem;
+        padding-top: 7%;
+    }
+    .introContent h2{
+        font-size: 1rem;
+    }
+    .introContent h2 span{
+        font-size: 3rem;
+    }
+    .line1{
+        font-size: 2rem;
+    }
+    .line2{
+        font-size: 1.2rem;
+    }
+    .line3{
+        font-size: 1.2rem;
+        padding-bottom: 75%;
+    }
+    .line4{
+        font-size: 1rem;
+    }
+    .contentBox{
+        width: 100%;
+    }
+    .listContainer ul li{
+        font-family: Quicksand;
+        font-size: 1.1rem;
+        padding-bottom: 2%;
+    }
+    .listContainer ul{
+        padding-left: 15%;
+    }
+    .contentBox p{
+        font-size: .9rem;
+    }
+    .icons{
+        font-size: 1.5rem;
+    }
+    .links span{
+        font-size: 0.4rem;
+    }
+    .scrollNotif{
+        font-size: .48rem;
     }
 }
 
